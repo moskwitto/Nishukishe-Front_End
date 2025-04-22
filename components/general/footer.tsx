@@ -1,5 +1,6 @@
 import Link from "next/link";
 import EmailNewsletterForm from "./newsletterform";
+import Image from "next/image";
 
 interface LinkData {
   href: string;
@@ -86,7 +87,9 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-start gap-[30px] xl:flex-row xl:justify-between xl:gap-0">
           {/* logo */}
-          <div></div>
+          <div>
+            <Image src="/logo.jpg" alt="logo" width={70} height={70} />
+          </div>
 
           {/* year and links */}
           <div>
@@ -112,7 +115,7 @@ export default function Footer() {
               {socialMediaLinks.map((link, idx) => (
                 <li key={idx} className="list-disc text-white">
                   <a target="_blank" rel="norefferer" href={link.href}>
-                    <img
+                    <Image
                       src={link.logo}
                       alt={link.label}
                       width={24}
