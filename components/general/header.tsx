@@ -4,8 +4,13 @@ import MobileMenu from "./mobilemenu";
 
 export default function Header() {
   return (
-    <header className="h-[56px] border-b border-black/50">
-      <div className="flex h-[56px] items-center justify-between">
+    <header className="fixed top-0 right-0 left-0 h-[56px] w-full border-b border-black/50 bg-blue-400">
+      <div
+        className="mx-auto flex h-[56px] items-center justify-between"
+        style={{
+          maxWidth: "1440px",
+        }}
+      >
         {/* left */}
         <div>
           {/* logo */}

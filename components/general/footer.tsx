@@ -61,9 +61,9 @@ const socialMediaLinks: SocialMediaLink[] = [
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="w-full bg-black">
       {/* main */}
-      <div>
+      <div className="min-h-[120px]" style={{ maxWidth: "1440px" }}>
         {/* newsletter */}
         <div>
           <h3 className="text-center text-lg font-semibold text-white">
